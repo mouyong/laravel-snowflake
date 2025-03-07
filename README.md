@@ -91,19 +91,19 @@ public function up()
 
 # JavaScript support
 
-由于 JavaScript 无法处理 64 位整数，因此还有 HasShortPrimary，它为 JavaScript 可以处理的 53 位整数创建 ID。
+由于 JavaScript 无法处理 64 位整数，因此还有 HasShortflakePrimary，它为 JavaScript 可以处理的 53 位整数创建 ID。
 
 ``` php
 <?php
 namespace App;
 
-use Ufucms\Snowflake\HasShortPrimary;
+use Ufucms\Snowflake\HasShortflakePrimary;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    use HasShortPrimary, Notifiable;
+    use HasShortflakePrimary, Notifiable;
 }
 ```
 
