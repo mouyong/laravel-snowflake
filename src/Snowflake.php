@@ -76,7 +76,7 @@ class Snowflake
      * 
      * 创建实例化
      *
-     * @return int
+     * @return static
      */
     public static function make()
     {
